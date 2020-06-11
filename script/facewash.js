@@ -1,5 +1,5 @@
     var xhr = new XMLHttpRequest();
-    var url = '/json/facewash.json' ;
+    var url = '../json/facewash.json' ;
     xhr.open('GET', url, true);
     xhr.onload = function () {
         if (this.status == 200) {
