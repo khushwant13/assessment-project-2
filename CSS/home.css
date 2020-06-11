@@ -1,0 +1,223 @@
+@font-face{
+    font-family: 'NeusHaas';
+    src: url(../Fonts/NeueHaasDisplay-Light.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../Images/Black.jpg) no-repeat fixed;
+    background-size: cover;
+    font-family: NeusHaas;
+    color: white;
+}
+ 
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #282828;
+}
+ 
+header h1{
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    font-family: 'Alfa Slab One', cursive;
+    color: #39ca74;
+    border-bottom: none;
+}
+nav{
+    padding-top: 15px;
+} 
+ul{
+    float: right;
+    margin: 0 5px;
+}
+ 
+li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 50px; 
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px)
+{
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #282828;
+        top: 0;
+        padding: 70px 0;
+        left: -150%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        font-size: 50px;
+        display: block;
+    }
+    nav ul li a{
+        font-size: 25px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        position: relative;
+    }
+}
+a{
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+}
+ 
+a:hover{
+    color: #F0c330;
+    transition: 0.5s;
+}
+ 
+.slider{
+    overflow: hidden;
+    width: 95%;
+    height: 650px;
+    margin: 0px auto;
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+.slider figure img{
+    float: left;
+    width: 20%;
+}
+@keyframes slider{
+    0%{
+        left: 0%;
+    }
+    20%{
+        left: 0%;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+.products{
+    margin: 0px auto;
+    width: 95%;
+}
+.products h1{
+    color: #6ab8ee;
+    border-bottom: solid 3px red;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.list{
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+.column{
+    display: flex;
+    flex-wrap: wrap;
+}
+#img1{
+    margin-top: 60px;
+    margin-left: 200px;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    transition: 0.6s ease;
+}
+.products .text{
+    border-bottom: solid 10px green;
+    font-family: Lobster;
+    font-size: 2em;
+    font-weight: 800;
+    margin-top: 0em;
+    text-align: center;
+    color: black;
+    position: relative;
+    background-color:white;
+    width: 200px;
+    bottom: 5px;
+    margin-left: 200px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.products #img1:hover{
+    height: 215px;
+}
+.pic{
+    background: rgba(255, 255, 255, 0.1);
+    border-top: solid black 10px;
+    margin-bottom: 0%;
+    margin-top: 100px;
+}
+.pic .container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.b1{
+    flex: 1;
+    padding-left: auto;
+}
+.b2{
+    flex: 1;
+}
+.b3{
+    flex: 1;
+}
+.b4{
+    flex: 1;
+}
+
+.pic .container img{
+    margin-left: 60px;
+    margin-right: auto;
+}

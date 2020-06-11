@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #282828;
+}
+header h1{
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    font-family: 'Alfa Slab One', cursive;
+    color: #39ca74;
+    border-bottom: none;
+}
+nav{
+    padding-top: 15px;
+} 
+ul{
+    float: right;
+    margin: 0 5px;
+}
+ 
+li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 50px; 
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px)
+{
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #282828;
+        top: 0;
+        padding: 70px 0;
+        left: -150%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        font-size: 50px;
+        display: block;
+    }
+    nav ul li a{
+        font-size: 25px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        position: relative;
+    }
+}
+a{
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+}
+ 
+a:hover{
+    color: #F0c330;
+    transition: 0.5s;
+}
+body{
+    background-color: #f1f1f1;
+}
+.about-section{
+    background: url("../Images/photo-of-man-running-during-daytime-2803158.jpg") no-repeat left;
+    background-size: 55%;
+    height: 80vh;
+    color: cornsilk;
+    padding: 100px 0;
+    margin-left: 10px;   
+    margin-top: 10px;
+}
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color:blanchedalmond;
+    padding: 40px;
+    color: #545454;
+}
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 52px;
+    font-weight: 900;
+}
+.text{
+    font-size: 20px;
+    color: #545454;
+    line-height: 24px;
+    text-align: justify;
+    margin-bottom: 8px;
+}
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 30px;
+    }
+}
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+h2{
+    color: #cf6660f1;
+ font-size: 50px;
+ font-family: 'Alfa Slab One', cursive;
+ padding-left: 150px;
+}
+span{
+    font-family: 'Alfa Slab One', cursive;
+}
